@@ -5,16 +5,16 @@ pipeline {
 //     	APP_SUBFOLDER = 'FPSO_Energy_Analytics\\FPSO_Solucao\\Front_end\\FPSO_Interface'
 //     }
     
-    stages {
-        stage('Clean-up') {
-            steps {
-//                 bat 'del %FPSO_Energy_Analytics\\FPSO_Solucao\\Front_end\\FPSO_Interface%\\fpso_interface.spec'
-//                 bat 'del %FPSO_Energy_Analytics\\FPSO_Solucao\\Front_end\\FPSO_Interface%\\fpso_interface.zip'
-//                 bat 'rmdir /s /q %FPSO_Energy_Analytics\\FPSO_Solucao\\Front_end\\FPSO_Interface%\\__pycache__'
-                bat 'rmdir /s /q %FPSO_Energy_Analytics\\FPSO_Solucao\\Front_end\\FPSO_Interface%\\build'
-                bat 'rmdir /s /q %FPSO_Energy_Analytics\\FPSO_Solucao\\Front_end\\FPSO_Interface%\\dist'
-            }
-        }
+//     stages {
+//         stage('Clean-up') {
+//             steps {
+// //                 bat 'del %FPSO_Energy_Analytics\\FPSO_Solucao\\Front_end\\FPSO_Interface%\\fpso_interface.spec'
+// //                 bat 'del %FPSO_Energy_Analytics\\FPSO_Solucao\\Front_end\\FPSO_Interface%\\fpso_interface.zip'
+// //                 bat 'rmdir /s /q %FPSO_Energy_Analytics\\FPSO_Solucao\\Front_end\\FPSO_Interface%\\__pycache__'
+//                 bat 'rmdir /s /q %FPSO_Energy_Analytics\\FPSO_Solucao\\Front_end\\FPSO_Interface%\\build'
+//                 bat 'rmdir /s /q %FPSO_Energy_Analytics\\FPSO_Solucao\\Front_end\\FPSO_Interface%\\dist'
+//             }
+//         }
         
         stage('Build') {
             steps {
