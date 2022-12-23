@@ -24,7 +24,7 @@ pipeline {
         
         stage('Deliver') {
             steps {
-                zip label: env.APP_SUBFOLDER + '\\fpso_interface.zip', url: env.APP_SUBFOLDER + '\\dist\\fpso_interface'
+                zip zipFile: env.APP_SUBFOLDER + '\\fpso_interface.zip', archive: false, dir: env.APP_SUBFOLDER + '\\dist\\fpso_interface'
             }
             post {
                 success {
