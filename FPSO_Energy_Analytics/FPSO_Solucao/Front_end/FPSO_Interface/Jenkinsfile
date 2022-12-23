@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-    	APP_SUBFOLDER = 'FPSO_Energy_Analytics\FPSO_Solucao\Front_end\FPSO_Interface'
+    	APP_SUBFOLDER = 'FPSO_Energy_Analytics\\FPSO_Solucao\\Front_end\\FPSO_Interface'
     }
     
     stages {
