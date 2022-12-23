@@ -18,14 +18,14 @@ pipeline {
         
         stage('Build') {
             steps {
-                bat 'python %FPSO_Energy_Analytics\\FPSO_Solucao\\Front_end\\FPSO_Interface%\\build.py %APP_SUBFOLDER%'
+                bat 'python %FPSO_Energy_Analytics\\FPSO_Solucao\\Front_end\\FPSO_Interface%\\build.py %FPSO_Energy_Analytics\\FPSO_Solucao\\Front_end\\FPSO_Interface%'
             }
         }
         
         stage('Deliver') {
             steps {
               script {
-                zip zipFile: 'FPSO_Energy_Analytics\\FPSO_Solucao\\Front_end\\FPSO_Interface' + '\\fpso_interface.zip', archive: false, dir: env.APP_SUBFOLDER + '\\dist\\fpso_interface'
+                zip zipFile: 'FPSO_Energy_Analytics\\FPSO_Solucao\\Front_end\\FPSO_Interface' + '\\fpso_interface.zip', archive: false, dir:  + '\\dist\\fpso_interface'
                 }
             post {
                 success {
