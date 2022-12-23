@@ -24,12 +24,14 @@ pipeline {
         
         stage('Deliver') {
             steps {
+              script {
                 zip zipFile: env.APP_SUBFOLDER + '\\fpso_interface.zip', archive: false, dir: env.APP_SUBFOLDER + '\\dist\\fpso_interface'
                 }
             post {
                 success {
                     archiveArtifacts env.APP_SUBFOLDER + '\\fpso_interface.zip'
                 }
+            }
             }
         }
     }
