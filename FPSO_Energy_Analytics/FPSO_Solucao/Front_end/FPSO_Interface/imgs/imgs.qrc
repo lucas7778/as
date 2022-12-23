@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>ml_icon.png</file>
+    <file>db_icon.png</file>
+  </qresource>
+</RCC>

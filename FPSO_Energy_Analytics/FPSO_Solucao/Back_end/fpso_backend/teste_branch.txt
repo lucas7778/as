@@ -1,0 +1,39 @@
+	PETROBRAS 14H-16H
+		MONTAR GIT/GITHUB
+		CRIAR BRANCHES
+			MAIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>	
+			         v                                                   ^
+				     v                                                   ^
+			BACKEND	>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>^>
+			            v    v          ^                        ^     ^
+			            v    v          ^                        ^     ^                   
+			CORR.       v    v>>>>>>>>>>^>>>>>>>>>>>>>>>>>>>>>>> ^ >>> ^ >>
+                        v               v                        ^     ^ 
+				        v               v                		 ^	   ^                 
+			            v               v                        ^     ^
+			REL.        v               v               >>>>>>>>>^     ^
+                        v               v               ^        v     ^
+			            v               v               ^        v     ^   
+			            v               v               ^        v     ^
+			DESENV. >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>^>>>
+							v	                   ^
+							v	                   ^
+							v	                   ^
+			FUNC.           v>>>>>>>>>>>>>>>>>>>>>>^                
+
+			BACKEND          - branch "master" do backend
+			DESENVOLVIMENTO  - desenvolvimento
+			CORRECOES        - correcoes graves da "master" do backend 
+			FUNCIONALIDADES  - pesquisas ou funcionalidades do backend
+			RELEASE          - pequenas correcoes e ajustes
+		    
+            BRANCH       BRANCH FROM    MERGE BACK TO			
+		    MASTER                      BACKEND
+			BACKEND      MASTER         MASTER 
+		    HOTFIXES     BACKEND        BACKEND,DEV 
+			DEV          BACKEND        RELEASES,FUNC
+		    FUNC         DEV            DEV 
+ 		    RELEASE      DEV            DEV, BACKEND		
+		    
+			git merge --no--ff preserves the tree structure
+		ANALISE DOS DADOS

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" IgnorableNamespaces="uap rescap">
+  <!--Package created by MSIX Packaging Tool version: 1.2022.110.0-->
+  <Identity Name="FPSO-analysis-tool" Publisher="CN=TestCert_2022-4-7_19-34-0" Version="1.0.0.0" ProcessorArchitecture="x64" />
+  <Properties>
+    <DisplayName>FPSO analysis tool</DisplayName>
+    <PublisherDisplayName>Petrobras</PublisherDisplayName>
+    <Description>Ferramenta de análise de dados de FPSOs</Description>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Resources>
+    <Resource Language="en-us" />
+  </Resources>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.16299.0" MaxVersionTested="10.0.22000.1" />
+  </Dependencies>
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+<Applications><Application Id="FPSOINTERFACE" Executable="fpso_interface.exe" EntryPoint="Windows.FullTrustApplication"><uap:VisualElements BackgroundColor="transparent" DisplayName="fpso_interface" Square150x150Logo="Assets\FPSOINTERFACE-Square150x150Logo.png" Square44x44Logo="Assets\FPSOINTERFACE-Square44x44Logo.png" Description="fpso_interface"><uap:DefaultTile Wide310x150Logo="Assets\FPSOINTERFACE-Wide310x150Logo.png" Square310x310Logo="Assets\FPSOINTERFACE-Square310x310Logo.png" Square71x71Logo="Assets\FPSOINTERFACE-Square71x71Logo.png" /></uap:VisualElements></Application></Applications></Package>

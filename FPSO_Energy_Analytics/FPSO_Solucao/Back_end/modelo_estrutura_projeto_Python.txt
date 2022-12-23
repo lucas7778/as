@@ -1,0 +1,28 @@
+BACK_END
+├── LICENSE.md
+├── fpso_backend
+│   ├── app.py
+│   ├── common
+│   │   └── __init__.py
+│   ├── analytics
+│   │   └── __init__.py
+│   │   └── settings.py
+│   ├── machine_learning
+│   │   └── __init__.py
+│   │   └── settings.py
+│   ├── powerflow
+│   │   └── __init__.py
+│   │   └── settings.py
+│   ├── data
+│   │   ├── __init__.py
+│   │   ├── data_loader.py
+│   │   ├── data_preparation.py
+│   │   ├── data_splitter.py
+│   │   └── settings.py
+│   ├── __init__.py
+│   ├── __main__.py
+│   ├── resources
+│   └── testes
+│       ├── __init__.py
+├── README.md
+└── .gitignore
