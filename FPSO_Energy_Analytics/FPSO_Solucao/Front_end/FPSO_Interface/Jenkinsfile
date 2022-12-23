@@ -1,9 +1,9 @@
 pipeline {
     agent any
     
-    environment {
-    	APP_SUBFOLDER = 'FPSO_Energy_Analytics\\FPSO_Solucao\\Front_end\\FPSO_Interface'
-    }
+//     environment {
+//     	APP_SUBFOLDER = 'FPSO_Energy_Analytics\\FPSO_Solucao\\Front_end\\FPSO_Interface'
+//     }
     
     stages {
         stage('Clean-up') {
@@ -25,7 +25,7 @@ pipeline {
         stage('Deliver') {
             steps {
               script {
-                zip zipFile: env.APP_SUBFOLDER + '\\fpso_interface.zip', archive: false, dir: env.APP_SUBFOLDER + '\\dist\\fpso_interface'
+                zip zipFile: 'FPSO_Energy_Analytics\\FPSO_Solucao\\Front_end\\FPSO_Interface' + '\\fpso_interface.zip', archive: false, dir: env.APP_SUBFOLDER + '\\dist\\fpso_interface'
                 }
             post {
                 success {
